@@ -18,7 +18,7 @@ public class ChatMessageService {
                 chatMessage.getSenderId(),
                 chatMessage.getReceiverId(),
                 true
-        ).orElseThrow();
+        ).orElseThrow(); //Create dedicated exception
 
         chatMessage.setChatId(chatId);
         repository.save(chatMessage);
